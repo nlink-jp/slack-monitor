@@ -204,3 +204,7 @@ slack-monitor is designed to work reliably with local LLMs that may:
 - LLM output is instructed to defang any domain or URL it mentions in findings/summaries
 - Input validation at all system boundaries (stdin, LLM output, config)
 - See [CLAUDE.md](CLAUDE.md) for full security policy
+
+## License
+
+MIT — see [LICENSE](LICENSE).

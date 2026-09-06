@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- **LICENSE (MIT).** The repository is public but carried no licence, which
+  leaves it all-rights-reserved by default — nobody could legally reuse it.
+  MIT matches every other licensed project in the organization.
+
 ## [0.2.1] - 2026-03-20
 
 ### Fixed
