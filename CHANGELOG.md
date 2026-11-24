@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Security
+
+- The locked dependency versions are upgraded. `uv audit` reported 6 known
+  advisories in the previous lock, all in transitive packages; the new lock
+  has none. This affects environments made with `uv sync` from the
+  repository.
+
 ### Added
 
 - **LICENSE (MIT).** The repository is public but carried no licence, which
