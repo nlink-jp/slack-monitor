@@ -55,7 +55,8 @@ Two entry points:
 - Single oversized messages are truncated with `[TRUNCATED]` suffix and a WARNING log.
 
 ### Testing
-- Run tests with: `uv run pytest`
+- Run tests with: `make test` (`uv run pytest`)
+- Before tagging a release: `make vuln` (`uv audit` on the lock; fails on a known advisory)
 - All tests must pass before committing.
 - New features require corresponding tests.
 - Tests must not make real network calls. Mock the `OpenAI` client in all LLM tests.
@@ -126,7 +127,10 @@ formatter.py    # Rich terminal output (panels to stdout)
 uv sync --all-groups
 
 # Run tests
-uv run pytest
+make test
+
+# Known advisories in the locked dependencies (run before tagging)
+make vuln
 
 # TUI mode (spawns stail internally)
 uv run slack-monitor-tui --channel "#general"

@@ -18,6 +18,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **LICENSE (MIT).** The repository is public but carried no licence, which
   leaves it all-rights-reserved by default — nobody could legally reuse it.
   MIT matches every other licensed project in the organization.
+- A `Makefile` with `test` and `vuln` (`uv audit` on the lock; fails on a
+  known advisory).
 
 ## [0.2.1] - 2026-03-20
 
